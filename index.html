@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modal_Practice2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h2>The modal</h2>
+        <h2><strong>The modal</strong></h2>
         <p>Scroll down to see the modal</p>
     </header>
     <div class="subscribe-section">
@@ -25,11 +26,14 @@
     <div class="modal_bg">
         <div class="modal">
             <h2>Subscribe Here</h2>
-            <label for="name">Name: </label>
-            <input type="text" name="name">
-            <label for="email">Email: </label>
-            <input type="email" name="email">
+            <div class='int-area'>
+                <label for="name">Name: </label>
+                <input type="text" name="name">
+                <label for="email">Email: </label>
+                <input type="email" name="email">
+            </div>
             <button>Subscribe</button>
+            <span class="modal-close">X</span>
         </div>
     </div>
     <script src="app.js"></script>
