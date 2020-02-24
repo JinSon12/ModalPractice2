@@ -15,6 +15,10 @@ body {
     cursor: pointer;    
 }
 
+/* 
+We have to use rgbA to not make the child element inherit the opacity from the parent element.
+Justify content to align the items horizontally, align-items to align the items VERTICALLY 
+*/ 
 .modal_bg {
     position: fixed; 
     top: 0;
@@ -40,19 +44,25 @@ body {
     background-color: white;
     width: 30%; 
     height: 50%;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
 }
 
-.modal button {
+.modal h2 {
+    display: block;
+    text-align: center;
+}
+.modal .subscribe-btn {
+    position: relative;
+    display: block;
     color:white;
-    background-color: steelblue;
+    background-color: blue;
     border: 0px;
     padding: 10px 30px; 
     cursor: pointer;  
-    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }  
 
 .modal-close {
@@ -61,6 +71,13 @@ body {
     right: 10px; 
     font-weight: bold;
     cursor: pointer;
+    font-size: 25px;
+    transform: rotate(45deg);
 }
 
-.int-area:first-child { margin :top}
+.int-area input {
+    position: relative;
+    align-items: center;
+    display: block;
+    margin: 10px auto;
+}
