@@ -18,6 +18,7 @@ body {
 /* 
 We have to use rgbA to not make the child element inherit the opacity from the parent element.
 Justify content to align the items horizontally, align-items to align the items VERTICALLY 
+(these properties only work when you are using display : flex; )
 */ 
 .modal_bg {
     position: fixed; 
